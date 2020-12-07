@@ -44,6 +44,7 @@ function draw() {
   textSize(1)
   text(snake.body.length, 1, 1)
   if (snake.endGame()) {
+    snake.body = []
     alert('YOU LOSE');
   }
 
